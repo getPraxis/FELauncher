@@ -1,0 +1,9 @@
+<aura:event type="APPLICATION" description="Event template" >
+    <aura:attribute name="ids" 		type="string" required="true"/>
+    <aura:attribute name="flowName" type="string" required="true"/>
+    <aura:attribute name="flowVariableName" type="string" required="true"/>
+    <aura:attribute name="sObject"  type="string" required="true"/>
+    <aura:attribute name="fields"   type="string[]" required="true"/>
+    
+
+</aura:event>

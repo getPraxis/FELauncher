@@ -1,0 +1,27 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" 
+                access="global" controller="FlowEventAuraController" >
+    
+    <aura:handler   event="c:FlowEvent" action="{!c.handleFlowEvent}" />
+    <aura:attribute name="isModalOpened" type="Boolean" default="false" />
+    <aura:attribute name="inputVariable" type="object"  />
+    <aura:attribute name="contacts" type="Contact[]"/>
+
+    <aura:if isTrue="{!v.isModalOpened}">
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" 
+                 class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <lightning:buttonIcon   iconName="utility:close"
+                                            onclick="{!c.closeFlowModal}"
+                                            alternativeText="close"
+                                            variant="bare-inverse"
+                                            class="slds-modal__close"/>
+                </header>
+                <div class="slds-modal__content slds-p-around_medium">
+                    <lightning:flow aura:id="myFlowContainer" onstatuschange="{!c.closeModalOnFinish}" />
+                </div>
+            </div>
+        </section> 
+         <div class="slds-backdrop slds-backdrop_open"></div>
+    </aura:if>
+</aura:component>
