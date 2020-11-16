@@ -17,14 +17,18 @@ public class FlowEventAuraControllerTest {
     private static void getRecordsById_UnSuccessful() {
         Contact con = new Contact(LastName='Simpson', FirstName='Homer', Department='Depo 1');
         insert con;
-
+		boolean caughtException = false;
         test.startTest();
         //adding a bad field so that it generates an error in the  method and returns an empty list
-        List<Contact> retrievedContacts = FlowEventAuraController.getRecordsById('Contact', new List<String>{'Id', 'LastName2', 'FirstName', 'Department'}, 
-                        new List<String>{con.Id});
+        try {
+        	List<Contact> retrievedContacts = FlowEventAuraController.getRecordsById('Contact', new List<String>{'Id', 'LastName2', 'FirstName', 'Department'}, 
+                        		new List<String>{con.Id});
+        }
+        catch(FlowEventAuraController.FlowEventApexException e) {
+            caughtException = true;
+        }
+        
         test.stopTest();
-
-        system.assertEquals(0, retrievedContacts.size(), 'Expected Zero results or an empty list but received ' + retrievedContacts.size() + ' results.');
+        System.assertEquals(true, caughtException, 'Expecting a FlowEventException and did not receive');
     }
-
 }
