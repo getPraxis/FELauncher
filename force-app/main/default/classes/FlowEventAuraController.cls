@@ -1,4 +1,6 @@
 public with sharing class FlowEventAuraController {
+    public class FlowEventApexException extends Exception {} 
+
     @AuraEnabled
     public static List<SObject> getRecordsById(String sObjectName, List<String> fields, List<String> idsUsedToRetrieve) {
         List<SObject> returnedRecords = new List<SObject>();
@@ -14,20 +16,24 @@ public with sharing class FlowEventAuraController {
             for(String field : fields) {
                 dynamicQuery += field + ',';
             }
+            
             dynamicQuery = (dynamicQuery.contains(',') ) ? dynamicQuery.left(dynamicQuery.length() -1) : dynamicQuery;
             dynamicQuery += ' FROM ' + sObjectName + ' WHERE Id IN :idsUsedToRetrieve';
             
             try {
                 returnedRecords = Database.query(dynamicQuery);
-                
-            } catch (Exception e) {
+            } 
+            catch(System.QueryException queryE) {
+                system.debug('getRecordsById: Query Exception - ' +  queryE.getMessage());
+                throw new FlowEventApexException('\nThere is a SOQL Query issue retrieving the data. Please contact your administrator.\n\nQuery: ' + dynamicQuery);
+            }
+            catch (System.Exception ex) {
                 //I'm not sure throwing an exception here or letting this one bubble up
                 //is best.  I'm going to supress with a log message.
-
-                system.debug('getRecordsById: Exception - ' +  e.getMessage());
+                system.debug('getRecordsById: General Exception - ' +  ex.getMessage());
+                throw new FlowEventApexException('\n\n General Exception occured.  Please contact your administrator.\n\n' + ex.getMessage());
             }
         }
-
         return returnedRecords;
    }
 }

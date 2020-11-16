@@ -5,7 +5,8 @@
         let flowVariableName = event.getParam('flowVariableName');
         let sObjectName = event.getParam('sObject');
         let sFields= event.getParam('fields');
-      
+        component.set('v.refreshPage', event.getParam('forcePageRefresh'));
+
         if ($A.util.isUndefinedOrNull(ids) || $A.util.isUndefinedOrNull(flowName) ||
             $A.util.isUndefinedOrNull(flowVariableName) || $A.util.isUndefinedOrNull(sObjectName) ||
             $A.util.isUndefinedOrNull(sFields)) {
@@ -17,13 +18,19 @@
     },
     
     closeFlowModal : function(component, event) {
-    	component.set('v.isModalOpened', false);    
+        component.set('v.isModalOpened', false);    
+        if (component.get('v.refreshPage') == true) {
+            $A.get('e.force:refreshView').fire();
+        }
     },
     
     closeModalOnFinish : function(component, event) {
         let status = event.getParam('status');
         if (status === 'FINISHED') {
             component.set('v.isModalOpened', false);
+            if (component.get('v.refreshPage') == true) {
+                $A.get('e.force:refreshView').fire();
+            } 
         }
     },
 })

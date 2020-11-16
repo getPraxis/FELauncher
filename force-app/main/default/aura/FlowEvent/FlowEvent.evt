@@ -4,6 +4,5 @@
     <aura:attribute name="flowVariableName" type="string" required="true"/>
     <aura:attribute name="sObject"  type="string" required="true"/>
     <aura:attribute name="fields"   type="string[]" required="true"/>
-    
-
+    <aura:attribute name='forcePageRefresh' type="boolean" required="true" default="false"/>
 </aura:event>
