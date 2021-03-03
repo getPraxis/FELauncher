@@ -1,31 +1,7 @@
-<!-----
-NEW: Check the "Suppress top comment" option to remove this info from the output.
-
-Conversion time: 5.426 seconds.
+<!-- Output copied to clipboard! -->
 
 
-Using this Markdown file:
-
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β29
-* Sat Feb 27 2021 18:27:02 GMT-0800 (PST)
-* Source doc: Flow Event Launcher Documentation
-* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
-
-
-WARNING:
-You have 8 H1 headings. You may want to use the "H1 -> H2" option to demote all headings by one level.
-
------>
-
-
-<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 1; ALERTS: 14.</p>
+<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 0; ALERTS: 14.</p>
 <ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
 
 <p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
@@ -46,11 +22,10 @@ You have 8 H1 headings. You may want to use the "H1 -> H2" option to demote all 
 <p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
 
 
+<h2>Flow Event Launcher</h2>
 
-# Flow Event Launcher
 
-
-## Launch flows from Enhanced Lightning Grid (and more)
+<p>Launch flows from Enhanced Lightning Grid (and more)
 
 launch a Flow from a row or list button, and have that flow open as a pop-up window overlay (modal).
 
@@ -62,8 +37,8 @@ Contents
 
 
 
+<h2>Introduction</h2>
 
-# Introduction
 
 The Enhanced Lightning Grid component from Salesforce Labs is a phenomenal component that enables creating a custom related-list table with:
 
@@ -89,11 +64,11 @@ We’ve created the FlowEvent Launcher **(FEL) **to launch flows from ELG as a p
 ![alt_text](images/image1.png "image_tooltip")
 
 
+<h2></h2>
 
-# 
 
+<h2>Installing the Flow Event Launcher</h2>
 
-# Installing the Flow Event Launcher
 
 There are two ways to install the Flow Event Launcher:
 
@@ -108,8 +83,8 @@ There are two ways to install the Flow Event Launcher:
  \
 
 
+<h2>How to use Flow Event Launcher</h2>
 
-# How to use Flow Event Launcher
 
 There are two steps to set up and use the FEL on any lightning page:
 
@@ -120,11 +95,11 @@ There are two steps to set up and use the FEL on any lightning page:
 
 2. Configure the Sortable Grid action to invoke the FEL component and to pass in required information.
 
+<h2></h2>
 
-# 
 
+<h2>Configuring the Enhanced Lightning Grid</h2>
 
-# Configuring the Enhanced Lightning Grid
 
 The crucial part of making the FlowEventListener respond and open the flows will be to configure the Enhanced Lightning Grid properly.
 
@@ -173,8 +148,8 @@ If you create multiple actions, this determines the order buttons appear in the 
 **You can select any icon from the Lightning Design System library, available here: \
 [https://www.lightningdesignsystem.com/icons/](https://www.lightningdesignsystem.com/icons/)
 
+<h2>The Event Payload</h2>
 
-# The Event Payload
 
 The event payload is entered in a JSON format (example below). \
 The component accepts the following attributes:
@@ -243,13 +218,13 @@ Your flow must have an input variable that takes a collection of the SObjects re
 ![alt_text](images/image5.png "image_tooltip")
 
 
+<h2>Putting it all together</h2>
 
-# Putting it all together
 
 We will quickly outline the steps to make a quick Flow that takes a collection of Contacts and displays them into a Screen Element.  Next, we will show how to setup the Event Flow Listener in a Lightning Page.  Finally, the last step will be to configure the Enhanced Lightning Grid to display both row and list level buttons to communicate with the FlowEventListener and to have your flow launched into a Modal Dialog.
 
+<h3>Create Flow</h3>
 
-## Create Flow
 
 
 
@@ -264,8 +239,8 @@ We will quickly outline the steps to make a quick Flow that takes a collection o
     *   It is important to remember when creating the input variable to check the following boxes: “Allow multiple values (collection)” and the “Available for Input”.
 *   After creating your screen to display your input variables save the screen and exit.
 
+<h3>Configure Enhanced Lightning Grid</h3>
 
-## Configure Enhanced Lightning Grid
 
 
 
@@ -310,8 +285,8 @@ We will quickly outline the steps to make a quick Flow that takes a collection o
 *   The event Payload is where we configure the FlowEvent in which the FlowEventListener will listen for.
     *   The five fields: ids, flowName, flowVariableName, sObject and fields are listed in the example payload.  All the fields are required to be configured with valid input.
 
+<h3>Placement of Lightning Component on Lightning Page </h3>
 
-## Placement of Lightning Component on Lightning Page 
 
 
 
@@ -333,8 +308,8 @@ We will quickly outline the steps to make a quick Flow that takes a collection o
 
 *   Click Save and then Activate
 
+<h3>Let’s see it in action</h3>
 
-## Let’s see it in action
 
 Navigate to the accounts page and click on the “Example Contacts”  related list.  Select as many rows from the Enhanced Lightning Grid.  Press the “List Collection” button at the top right of the list. 
 
