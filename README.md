@@ -131,14 +131,16 @@ The component accepts the following attributes:
 
 **Sample Event Payload:**
 
-`{
+```
+{
 "ids" : "#ids#",
  "flowName" : "My_Cool_Flow",
  "flowVariableName" : "selectedLines",
  "forcePageRefresh" : true,
  "sObject" : "myCustomObject__c",
      "fields" : [ "Id", "Name",”My_Field__c",”LastModifiedDate”,”OwnerId”,”Owner.FullName”]
-}`
+}
+```
 
 <h2>Flow Requirements</h2>
 Your flow must have an input variable that takes a collection of the SObjects records that you are expecting from the Enhanced Lightning Grid.   
