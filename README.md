@@ -22,27 +22,13 @@
 <p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
 
 
-<h2>Flow Event Launcher</h2>
-
-
-<p>Launch flows from Enhanced Lightning Grid (and more)
+<h1>Flow Event Launcher</h1>
+<h2>Launch flows from Enhanced Lightning Grid (and more)</h2>
 
 launch a Flow from a row or list button, and have that flow open as a pop-up window overlay (modal).
 
-Contents
-
-
-[TOC]
-
-
-
-
 <h2>Introduction</h2>
-
-
 The Enhanced Lightning Grid component from Salesforce Labs is a phenomenal component that enables creating a custom related-list table with:
-
-
 
 1. Row-Level Buttons with icons
 2. Row-Level Action (drop-down button)
@@ -50,80 +36,51 @@ The Enhanced Lightning Grid component from Salesforce Labs is a phenomenal compo
 4. List-Level Actions
 5. Multi-Select with List-Level buttons/actions
 
-One of the common questions we’ve seen posted online is - how can I launch a flow from buttons on Enhanced Lightning Grid **(ELG) **components.
-
+One of the common questions we’ve seen posted online is - how can I launch a flow from buttons on Enhanced Lightning Grid **(ELG)** components.
 You could use the lightning event (e.force:navigateToURL) to navigate to a flow page, but this navigates away from the page, which may not be what you want.
-
-We’ve created the FlowEvent Launcher **(FEL) **to launch flows from ELG as a popup (modal):
-
-
+We’ve created the FlowEvent Launcher **(FEL)** to launch flows from ELG as a popup (modal):
 
 <p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 
 ![alt_text](images/image1.png "image_tooltip")
 
 
-<h2></h2>
-
-
 <h2>Installing the Flow Event Launcher</h2>
-
-
 There are two ways to install the Flow Event Launcher:
-
-
 
 1. Clone the code in this repository, and push it to your Salesforce Org
 2. Install the pre-packaged component using the following links
-    1. Install to Sandbox: \
- \
+    1. Install to Sandbox: 
+ 
 
-    2. Install to Production: \
- \
-
+    2. Install to Production: 
+ 
 
 <h2>How to use Flow Event Launcher</h2>
-
-
 There are two steps to set up and use the FEL on any lightning page:
-
-
 
 1. Drag the FlowLauncher component on to the page. It will be invisible, though it’s sitting there listening for a Lightning Event, which will tell it to jump into action \
 (note: while on the Lightning App Builder, the component will appear to add some white-space where you placed it, but when viewing a page, it will be fully invisible) \
 
 2. Configure the Sortable Grid action to invoke the FEL component and to pass in required information.
 
-<h2></h2>
-
-
 <h2>Configuring the Enhanced Lightning Grid</h2>
-
-
 The crucial part of making the FlowEventListener respond and open the flows will be to configure the Enhanced Lightning Grid properly.
 
 When you click the New button In the actions related list of the Sortable Data Grid page, the below page shows up. We’ll walk you through each field to make sure the setup process is as clear as can be:
-
-
-
 <p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/image2.png "image_tooltip")
 
-
-
-
-1. **Name \
-**Select a name for the Event - this will show up on the button
-2. **SDG \
-**is the lookup to the Sortable Grid you are adding
-3. **Event \
-**This is the Lightning Event that pressing the button will fire.  \
-- If you deployed our code directly to your org, use: e.c:FlowEvent \
-- If you used our pre-packaged component, use: e.praxis:FlowEvent \
-
+1. **Name**\
+   Select a name for the Event - this will show up on the button
+2. **SDG**\
+   is the lookup to the Sortable Grid you are adding
+3. **Event**\
+  This is the Lightning Event that pressing the button will fire.  \
+  - If you deployed our code directly to your org, use: e.c:FlowEvent \
+  - If you used our pre-packaged component, use: e.praxis:FlowEvent \
 
 <p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
@@ -131,86 +88,65 @@ When you click the New button In the actions related list of the Sortable Data G
 ![alt_text](images/image3.png "image_tooltip")
 
 4. **Action Order** \
-If you create multiple actions, this determines the order buttons appear in the table.
+   If you create multiple actions, this determines the order buttons appear in the table.
 5. **Required checkboxes \
-**You can ensure that only users that have Create/Edit/Delete permissions to the displayed object will see the button
-6. **Action Type \
-**You can select the following options:
-    1. Row: the action will appear on each row in the action drop-down button 
-    2. List: the action will appear on the table’s header in the action drop-down button
-    3. Row Button: the action will appear as a distinct button on each row
-    4. List Button: the action will appear as a distinct button on the table’s header
-    5. List Multi-Select: same as List Button, but will only be active when records are selected
-7. **Event Payload \
-**This is where we define what flow gets launched and other related information. Details below. \
+   You can ensure that only users that have Create/Edit/Delete permissions to the displayed object will see the button   
+6. **Action Type** \
+   You can select the following options:
+    a. Row: the action will appear on each row in the action drop-down button 
+    b. List: the action will appear on the table’s header in the action drop-down button
+    c. Row Button: the action will appear as a distinct button on each row
+    d. List Button: the action will appear as a distinct button on the table’s header
+    e. List Multi-Select: same as List Button, but will only be active when records are selected
+7. **Event Payload** \
+   This is where we define what flow gets launched and other related information. Details below. \
 
-8. **Icon \
-**You can select any icon from the Lightning Design System library, available here: \
-[https://www.lightningdesignsystem.com/icons/](https://www.lightningdesignsystem.com/icons/)
+8. **Icon** \
+   You can select any icon from the Lightning Design System library, available here: \
+   [https://www.lightningdesignsystem.com/icons/](https://www.lightningdesignsystem.com/icons/)
 
 <h2>The Event Payload</h2>
-
-
 The event payload is entered in a JSON format (example below). \
 The component accepts the following attributes:
 
-
-
-1. **Ids (Required) \
-**A valid list of Salesforce Id’s for the SObjects(s) on the Enhanced Lightning Grid that was selected. EGL support the following variables: 
-    1. #id# - passes the id of the row (you will only use this in row-level actions)
-    2. #ids# - passes the list of ids for the selected rows (you will only use this in list-level actions)
-    3. #parentecordId# - passes the id of the parent record (the record viewed on the page)
-    4. #AnyAPIName# - you can pass in the value of any field that is displayed in the table, for example #LastModifiedDate#
-2. **flowName (Required) \
-**A valid API name of the flow which is expected to be started.
-3. **flowVariableName **(**Required) \
-**The name of the input variable in the launched flow that will accept a **collection of SObjects **that will be passed from the FEL Component.  \
-_Note that the component doesn’t just pass in the selected IDs, it actually queries the records and passes in the records themselves. Therefore, the input variable must be of type ‘Record’ and must have the ‘Allow multiple values (collection)’ checkbox selected, as well as the ‘Available as Input’._
-4. **sObject **(**Required) \
-**The API name of the sObject that will be queried and passed into the flow’s input variable
-5. **Fields** (**Required)**  \
-List of fields on the sObject that are to be retrieved from Salesforce.  The fields can be standard, custom and reference fields. You can use relational fields to obtain values from related parent records through lookup fields. \
-Any field that you plan to use inside the flow must be provided here, or queried separately inside the flow.
-6. **forcePageRefresh (Optional) \
-**When using this parameter, the FEL component will cause the page to refresh all data once the flow popup (modal) is closed.  \
-This is done by firing the **_e.Force:refreshView_** event, and is different than a full page-refresh.** \
-**
+1. **Ids (Required)** \
+   A valid list of Salesforce Id’s for the SObjects(s) on the Enhanced Lightning Grid that was selected. EGL support the following variables: 
+     a. #id# - passes the id of the row (you will only use this in row-level actions)
+     b. #ids# - passes the list of ids for the selected rows (you will only use this in list-level actions)
+     c. #parentecordId# - passes the id of the parent record (the record viewed on the page)
+     d. #AnyAPIName# - you can pass in the value of any field that is displayed in the table, for example #LastModifiedDate#
+2. **flowName (Required)** \
+   A valid API name of the flow which is expected to be started.
+3. **flowVariableName (Required)** \
+   The name of the input variable in the launched flow that will accept a **collection of SObjects **that will be passed from the FEL Component.  \
+   _Note that the component doesn’t just pass in the selected IDs, it actually queries the records and passes in the records themselves. Therefore, the input variable must be of type ‘Record’ and must have the ‘Allow multiple values (collection)’ checkbox selected, as well as the ‘Available as Input’._
+4. **sObject (Required)** \
+   The API name of the sObject that will be queried and passed into the flow’s input variable
+5. **Fields (Required)**  \
+   List of fields on the sObject that are to be retrieved from Salesforce.  The fields can be standard, custom and reference fields. You can use relational fields to obtain values from related parent records through lookup fields. \
+   Any field that you plan to use inside the flow must be provided here, or queried separately inside the flow.
+6. **forcePageRefresh (Optional)** \
+   When using this parameter, the FEL component will cause the page to refresh all data once the flow popup (modal) is closed.  \
+   This is done by firing the **_e.Force:refreshView_** event, and is different than a full page-refresh. \
 
 **Sample Event Payload:**
 
-{
-
+`{
 "ids" : "#ids#",
-
  "flowName" : "My_Cool_Flow",
-
  "flowVariableName" : "selectedLines",
-
  "forcePageRefresh" : true,
-
  "sObject" : "myCustomObject__c",
-
-
      "fields" : [ "Id", "Name",”My_Field__c",”LastModifiedDate”,”OwnerId”,”Owner.FullName”]
+}`
 
-}
-
-
-
-Flow Requirements
-
+<h2>Flow Requirements</h2>
 Your flow must have an input variable that takes a collection of the SObjects records that you are expecting from the Enhanced Lightning Grid.   
-
-
 
 <p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/image4.png "image_tooltip")
-
-
-
 
 <p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
