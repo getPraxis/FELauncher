@@ -138,7 +138,7 @@ The component accepts the following attributes:
  "flowVariableName" : "selectedLines",
  "forcePageRefresh" : true,
  "sObject" : "myCustomObject__c",
-     "fields" : [ "Id", "Name",”My_Field__c",”LastModifiedDate”,”OwnerId”,”Owner.FullName”]
+     "fields" : [ "Id", "Name","My_Field__c","LastModifiedDate","OwnerId","Owner.FullName"]
 }
 ```
 
