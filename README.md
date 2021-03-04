@@ -40,9 +40,6 @@ There are two steps to set up and use the FEL on any lightning page:
 The crucial part of making the FlowEventListener respond and open the flows will be to configure the Enhanced Lightning Grid properly.
 
 When you click the New button In the actions related list of the Sortable Data Grid page, the below page shows up. We’ll walk you through each field to make sure the setup process is as clear as can be:
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 (![alt text](../media/image3.png?raw=true) "image_tooltip")
 
 
