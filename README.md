@@ -1,7 +1,6 @@
-<h1>Flow Event Launcher</h1>
-<h2>Launch flows from Enhanced Lightning Grid (and more)</h2>
-
-launch a Flow from a row or list button, and have that flow open as a pop-up window overlay (modal).
+<h2>Flow Event Launcher</h2>
+<h3>Launch flows from Enhanced Lightning Grid (and more)</h3>
+Launch a Flow from a row or list button, and have that flow open as a pop-up window overlay (modal).
 
 <h2>Introduction</h2>
 The Enhanced Lightning Grid component from Salesforce Labs is a phenomenal component that enables creating a custom related-list table with:
@@ -16,10 +15,7 @@ One of the common questions we’ve seen posted online is - how can I launch a f
 You could use the lightning event (e.force:navigateToURL) to navigate to a flow page, but this navigates away from the page, which may not be what you want.
 We’ve created the FlowEvent Launcher **(FEL)** to launch flows from ELG as a popup (modal):
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 ![alt text](../media/image2.png?raw=true)
-
 
 <h2>Installing the Flow Event Launcher</h2>
 There are two ways to install the Flow Event Launcher:
