@@ -1,27 +1,3 @@
-<!-- Output copied to clipboard! -->
-
-
-<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 0; ALERTS: 14.</p>
-<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
-
-<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
-<a href="#gdcalert2">alert2</a>
-<a href="#gdcalert3">alert3</a>
-<a href="#gdcalert4">alert4</a>
-<a href="#gdcalert5">alert5</a>
-<a href="#gdcalert6">alert6</a>
-<a href="#gdcalert7">alert7</a>
-<a href="#gdcalert8">alert8</a>
-<a href="#gdcalert9">alert9</a>
-<a href="#gdcalert10">alert10</a>
-<a href="#gdcalert11">alert11</a>
-<a href="#gdcalert12">alert12</a>
-<a href="#gdcalert13">alert13</a>
-<a href="#gdcalert14">alert14</a>
-
-<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
-
-
 <h1>Flow Event Launcher</h1>
 <h2>Launch flows from Enhanced Lightning Grid (and more)</h2>
 
@@ -42,7 +18,7 @@ We’ve created the FlowEvent Launcher **(FEL)** to launch flows from ELG as a p
 
 <p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-![alt text](../media/image1.png?raw=true)
+![alt text](../media/image2.png?raw=true)
 
 
 <h2>Installing the Flow Event Launcher</h2>
@@ -71,7 +47,7 @@ When you click the New button In the actions related list of the Sortable Data G
 <p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-(![alt text](../media/image2.png?raw=true) "image_tooltip")
+(![alt text](../media/image3.png?raw=true) "image_tooltip")
 
 
 1. **Name**\
@@ -86,7 +62,7 @@ When you click the New button In the actions related list of the Sortable Data G
 <p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png?raw=true). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](../media/image3.png?raw=true "image_tooltip")
+![alt_text](../media/image4.png?raw=true "image_tooltip")
 
 4. **Action Order** \
    If you create multiple actions, this determines the order buttons appear in the table.
@@ -94,7 +70,7 @@ When you click the New button In the actions related list of the Sortable Data G
    You can ensure that only users that have Create/Edit/Delete permissions to the displayed object will see the button   
 6. **Action Type** \
    You can select the following options:
-    a. Row: the action will appear on each row in the action drop-down button 
+    a. Row: the action will appear on each row in the action drop-down button  ![alt_text](../media/image1.png?raw=true "image_tooltip")
     b. List: the action will appear on the table’s header in the action drop-down button
     c. Row Button: the action will appear as a distinct button on each row
     d. List Button: the action will appear as a distinct button on the table’s header
@@ -146,15 +122,9 @@ The component accepts the following attributes:
 <h2>Flow Requirements</h2>
 Your flow must have an input variable that takes a collection of the SObjects records that you are expecting from the Enhanced Lightning Grid.   
 
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png?raw=true). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](../media/image4.png?raw=true "image_tooltip")
-
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png?raw=true). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](../media/image5.png?raw=true "image_tooltip")
+
+![alt_text](../media/image6.png?raw=true "image_tooltip")
 
 
 <h2>Putting it all together</h2>
@@ -164,15 +134,9 @@ We will quickly outline the steps to make a quick Flow that takes a collection o
 
 <h3>Create Flow</h3>
 
-
-
-
 *   Create a new Flow and label it whatever you want. 
 
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png?raw=true). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](../media/image6.png?raw=true "image_tooltip")
+![alt_text](../media/image7.png?raw=true "image_tooltip")
 
 *   Create your flow to do what ever you like.  In this example you will see a Record Collection, labeled “contactRecords” variable and a Screens element, labeled “Screen Test”.  The screen can be configured to meet your needs to display the Record Collection variable.
     *   It is important to remember when creating the input variable to check the following boxes: “Allow multiple values (collection)” and the “Available for Input”.
@@ -180,44 +144,26 @@ We will quickly outline the steps to make a quick Flow that takes a collection o
 
 <h3>Configure Enhanced Lightning Grid</h3>
 
-
-
-
 *   From the Salesforce Application Launcher select “Sortable Data Grids”.  
-
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png?raw=true). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](../media/image7.png?raw=true "image_tooltip")
-
-*   From the list view create a new Data Grid.  
-
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.png?raw=true). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 
 ![alt_text](../media/image8.png?raw=true "image_tooltip")
 
-*   When entering the information on the Create sortable data grid dialog, remember to select Contacts as the SObject.  In the next image you’ll see an example. 
-
-<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image9.png?raw=true). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
+*   From the list view create a new Data Grid.  
 
 ![alt_text](../media/image9.png?raw=true "image_tooltip")
+
+*   When entering the information on the Create sortable data grid dialog, remember to select Contacts as the SObject.  In the next image you’ll see an example. 
+
+![alt_text](../media/image10.png?raw=true "image_tooltip")
 
 *   Once the new grid is created select it from the list view then select the “Related” list view tab.
 *   From here you can configure your grid to display the fields you need from the “Fields” list view.   Once that is done you can proceed to create actions.  This is where we will configure for the Flow Event Launcher. 
 
-<p id="gdcalert10" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image10.png?raw=true). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert11">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](../media/image10.png?raw=true "image_tooltip")
+![alt_text](../media/image11.png?raw=true "image_tooltip")
 
 *   In this example we will discuss the configuration for the “List Collection” as shown in the image below.  
 
-<p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image11.png?raw=true). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](../media/image11.png?raw=true "image_tooltip")
+![alt_text](../media/image12.png?raw=true "image_tooltip")
 
 *   To ensure that the new grid fires off the correct event we define it in the Event field as “e.c:FlowEvent”.
 *   In our example the action is defined as a “List Multi Select”.
@@ -226,37 +172,22 @@ We will quickly outline the steps to make a quick Flow that takes a collection o
 
 <h3>Placement of Lightning Component on Lightning Page </h3>
 
-
-
-
 *   In this example the accounts Lightning Page will be updated to add a new tab to the related list called “Example Contacts”.  
 
-<p id="gdcalert12" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image12.png?raw=true). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert13">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](../media/image12.png?raw=true "image_tooltip")
+![alt_text](../media/image13.png?raw=true "image_tooltip")
 
 *   The following components have been placed onto the page:
     *   Enhanced Lightning Grid - Click on the component and make any component level configurations that are needed, such as; Visibility, Icon, name of component, etc..
     *   FlowEventListener - UI (less) will not show on the page at run-time.  No configurations needed.
 
-<p id="gdcalert13" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image13.png?raw=true). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert14">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](../media/image13.png?raw=true "image_tooltip")
+![alt_text](../media/image14.png?raw=true "image_tooltip")
 
 *   Click Save and then Activate
 
 <h3>Let’s see it in action</h3>
 
-
 Navigate to the accounts page and click on the “Example Contacts”  related list.  Select as many rows from the Enhanced Lightning Grid.  Press the “List Collection” button at the top right of the list. 
 
 Boom, you should see the flow showing in a modal dialog.
 
-
-
-<p id="gdcalert14" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image14.png?raw=true). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert15">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](../media/image14.png?raw=true "image_tooltip")
+![alt_text](../media/image15.png?raw=true "image_tooltip")
