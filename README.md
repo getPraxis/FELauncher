@@ -40,7 +40,7 @@ There are two steps to set up and use the FEL on any lightning page:
 The crucial part of making the FlowEventListener respond and open the flows will be to configure the Enhanced Lightning Grid properly.
 
 When you click the New button In the actions related list of the Sortable Data Grid page, the below page shows up. We’ll walk you through each field to make sure the setup process is as clear as can be:
-(![alt text](../media/image3.png?raw=true) "image_tooltip")
+![alt text](../media/image3.png?raw=true "image_tooltip")
 
 
 1. **Name**\
