@@ -42,7 +42,7 @@ We’ve created the FlowEvent Launcher **(FEL)** to launch flows from ELG as a p
 
 <p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-![alt_text](images/image1.png "image_tooltip")
+![alt_text](![alt text](../media/image1.png?raw=true) "image_tooltip")
 
 
 <h2>Installing the Flow Event Launcher</h2>
@@ -71,7 +71,7 @@ When you click the New button In the actions related list of the Sortable Data G
 <p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image2.png "image_tooltip")
+![alt_text](![alt text](../media/image2.png?raw=true) "image_tooltip")
 
 1. **Name**\
    Select a name for the Event - this will show up on the button
