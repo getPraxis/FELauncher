@@ -57,12 +57,12 @@ When you click the New button In the actions related list of the Sortable Data G
 5. **Required checkboxes** \
    You can ensure that only users that have Create/Edit/Delete permissions to the displayed object will see the button   
 6. **Action Type** \
-   You can select the following options:
-    a. Row: the action will appear on each row in the action drop-down button  ![alt_text](../media/image1.png?raw=true "image_tooltip")
-    b. List: the action will appear on the table’s header in the action drop-down button
-    c. Row Button: the action will appear as a distinct button on each row
-    d. List Button: the action will appear as a distinct button on the table’s header
-    e. List Multi-Select: same as List Button, but will only be active when records are selected
+   You can select the following options: \
+    a. Row: the action will appear on each row in the action drop-down button  ![alt_text](../media/image1.png?raw=true "image_tooltip") \
+    b. List: the action will appear on the table’s header in the action drop-down button \
+    c. Row Button: the action will appear as a distinct button on each row \
+    d. List Button: the action will appear as a distinct button on the table’s header \
+    e. List Multi-Select: same as List Button, but will only be active when records are selected \
 7. **Event Payload** \
    This is where we define what flow gets launched and other related information. Details below. \
 
@@ -109,8 +109,8 @@ The component accepts the following attributes:
 <h2>Flow Requirements</h2>
 Your flow must have an input variable that takes a collection of the SObjects records that you are expecting from the Enhanced Lightning Grid.   
 
-![alt_text](../media/image5.png?raw=true "image_tooltip")
-![alt_text](../media/image6.png?raw=true "image_tooltip")
+![alt_text](../media/image8.png?raw=true "image_tooltip")
+![alt_text](../media/image7.png?raw=true "image_tooltip")
 
 
 <h2>Putting it all together</h2>
@@ -122,7 +122,7 @@ We will quickly outline the steps to make a quick Flow that takes a collection o
 
 *   Create a new Flow and label it whatever you want. 
 
-![alt_text](../media/image7.png?raw=true "image_tooltip")
+![alt_text](../media/image10.png?raw=true "image_tooltip")
 
 *   Create your flow to do what ever you like.  In this example you will see a Record Collection, labeled “contactRecords” variable and a Screens element, labeled “Screen Test”.  The screen can be configured to meet your needs to display the Record Collection variable.
     *   It is important to remember when creating the input variable to check the following boxes: “Allow multiple values (collection)” and the “Available for Input”.
@@ -132,24 +132,24 @@ We will quickly outline the steps to make a quick Flow that takes a collection o
 
 *   From the Salesforce Application Launcher select “Sortable Data Grids”.  
 
-![alt_text](../media/image8.png?raw=true "image_tooltip")
+![alt_text](../media/image9.png?raw=true "image_tooltip")
 
 *   From the list view create a new Data Grid.  
 
-![alt_text](../media/image9.png?raw=true "image_tooltip")
+![alt_text](../media/image12.png?raw=true "image_tooltip")
 
 *   When entering the information on the Create sortable data grid dialog, remember to select Contacts as the SObject.  In the next image you’ll see an example. 
 
-![alt_text](../media/image10.png?raw=true "image_tooltip")
+![alt_text](../media/image11.png?raw=true "image_tooltip")
 
 *   Once the new grid is created select it from the list view then select the “Related” list view tab.
 *   From here you can configure your grid to display the fields you need from the “Fields” list view.   Once that is done you can proceed to create actions.  This is where we will configure for the Flow Event Launcher. 
 
-![alt_text](../media/image11.png?raw=true "image_tooltip")
+![alt_text](../media/image14.png?raw=true "image_tooltip")
 
 *   In this example we will discuss the configuration for the “List Collection” as shown in the image below.  
 
-![alt_text](../media/image12.png?raw=true "image_tooltip")
+![alt_text](../media/image13.png?raw=true "image_tooltip")
 
 *   To ensure that the new grid fires off the correct event we define it in the Event field as “e.c:FlowEvent”.
 *   In our example the action is defined as a “List Multi Select”.
@@ -160,13 +160,13 @@ We will quickly outline the steps to make a quick Flow that takes a collection o
 
 *   In this example the accounts Lightning Page will be updated to add a new tab to the related list called “Example Contacts”.  
 
-![alt_text](../media/image13.png?raw=true "image_tooltip")
+![alt_text](../media/image6.png?raw=true "image_tooltip")
 
 *   The following components have been placed onto the page:
     *   Enhanced Lightning Grid - Click on the component and make any component level configurations that are needed, such as; Visibility, Icon, name of component, etc..
     *   FlowEventListener - UI (less) will not show on the page at run-time.  No configurations needed.
 
-![alt_text](../media/image14.png?raw=true "image_tooltip")
+![alt_text](../media/image5.png?raw=true "image_tooltip")
 
 *   Click Save and then Activate
 
@@ -176,4 +176,4 @@ Navigate to the accounts page and click on the “Example Contacts”  related l
 
 Boom, you should see the flow showing in a modal dialog.
 
-![alt_text](../media/image15.png?raw=true "image_tooltip")
+![alt_text](../media/image2.png?raw=true "image_tooltip")
