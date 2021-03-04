@@ -12,7 +12,7 @@ The Enhanced Lightning Grid component from Salesforce Labs is a phenomenal compo
 5. Multi-Select with List-Level buttons/actions
 
 You can find the Enhanced Lightning Grid on the Salesforce AppExchange [here](https://appexchange.salesforce.com/listingDetail?listingId=a0N3A00000EVK8iUAH)
-Or on Github [here](https://github.com/SalesforceLabs/EnhancedLightningGrid)
+or on Github [here](https://github.com/SalesforceLabs/EnhancedLightningGrid)
 
 One of the common questions we’ve seen posted online is - how can I launch a flow from buttons on Enhanced Lightning Grid **(ELG)** components.
 You could use the lightning event (e.force:navigateToURL) to navigate to a flow page, but this navigates away from the page, which may not be what you want.
