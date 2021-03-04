@@ -42,21 +42,19 @@ The crucial part of making the FlowEventListener respond and open the flows will
 When you click the New button In the actions related list of the Sortable Data Grid page, the below page shows up. We’ll walk you through each field to make sure the setup process is as clear as can be:
 ![alt text](../media/image3.png?raw=true "image_tooltip")
 
-
 1. **Name**\
    Select a name for the Event - this will show up on the button
 2. **SDG**\
    is the lookup to the Sortable Grid you are adding
 3. **Event**\
   This is the Lightning Event that pressing the button will fire.  \
-  - If you deployed our code directly to your org, use: e.c:FlowEvent \
-  - If you used our pre-packaged component, use: e.praxis:FlowEvent \
-
+    - If you deployed our code directly to your org, use: e.c:FlowEvent \
+    - If you used our pre-packaged component, use: e.praxis:FlowEvent \
 ![alt_text](../media/image4.png?raw=true "image_tooltip")
 
 4. **Action Order** \
    If you create multiple actions, this determines the order buttons appear in the table.
-5. **Required checkboxes \
+5. **Required checkboxes** \
    You can ensure that only users that have Create/Edit/Delete permissions to the displayed object will see the button   
 6. **Action Type** \
    You can select the following options:
@@ -97,7 +95,6 @@ The component accepts the following attributes:
    This is done by firing the **_e.Force:refreshView_** event, and is different than a full page-refresh. \
 
 **Sample Event Payload:**
-
 ```
 {
 "ids" : "#ids#",
@@ -113,7 +110,6 @@ The component accepts the following attributes:
 Your flow must have an input variable that takes a collection of the SObjects records that you are expecting from the Enhanced Lightning Grid.   
 
 ![alt_text](../media/image5.png?raw=true "image_tooltip")
-
 ![alt_text](../media/image6.png?raw=true "image_tooltip")
 
 
