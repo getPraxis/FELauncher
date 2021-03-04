@@ -55,9 +55,6 @@ When you click the New button In the actions related list of the Sortable Data G
   - If you deployed our code directly to your org, use: e.c:FlowEvent \
   - If you used our pre-packaged component, use: e.praxis:FlowEvent \
 
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png?raw=true). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](../media/image4.png?raw=true "image_tooltip")
 
 4. **Action Order** \
