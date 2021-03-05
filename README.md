@@ -1,6 +1,5 @@
 # Flow Event Launcher
-#### Launch flows from Enhanced Lightning Grid (and more)
-##### Launch a Flow from a row or list button, and have that flow open as a pop-up window overlay (modal).
+#### Launch flows from Enhanced Lightning Grid's row or list button, and have that flow open as a pop-up window overlay (modal).
 > Developed by @darrylingalls, Sr. Developer at [Praxis Solutions LLC](www.getpraxis.com)
 
 <h2>Introduction</h2>
@@ -116,6 +115,11 @@ Your flow must have an input variable that takes a collection of the SObjects re
 ![alt_text](../media/image8.png?raw=true "image_tooltip")
 ![alt_text](../media/image7.png?raw=true "image_tooltip")
 
+<h2>Going beyond Enhanced Lightning Grid</h2>
+The **FEL** component can more than just an extension to the **Enhanced Lightning Grid component.**
+In its most basic form, it simply sits on a page, invisible, and waits for a Lightning Event of the type e.praxis:flowEvent.
+These events can be fired from other places, including custom components and potentially other 3rd party components.
+Whereever you see a reference to firing a lightning event like **e.force:** that means you can also call the FEL in the same way as described above.
 
 <h2>Putting it all together</h2>
 
