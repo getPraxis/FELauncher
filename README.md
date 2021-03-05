@@ -1,6 +1,7 @@
 # Flow Event Launcher
 #### Launch flows from Enhanced Lightning Grid (and more)
 ###### Launch a Flow from a row or list button, and have that flow open as a pop-up window overlay (modal).
+Developed by @darrylingalls, Sr. Developer at [www.getpraxis.com](Praxis Solutions LLC)
 
 <h2>Introduction</h2>
 The Enhanced Lightning Grid component from Salesforce Labs is a phenomenal component that enables creating a custom related-list table with:
@@ -26,10 +27,10 @@ There are two ways to install the Flow Event Launcher:
 1. Clone the code in this repository, and push it to your Salesforce Org
 2. Install the pre-packaged component using the following links
     1. Install to Sandbox: 
- 
+       [https://test.salesforce.com/packaging/installPackage.apexp?p0=04t1K000002azFiQAI](https://test.salesforce.com/packaging/installPackage.apexp?p0=04t1K000002azFiQAI)
 
     2. Install to Production: 
- 
+       [https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1K000002azFiQAI](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1K000002azFiQAI)
 
 <h2>How to use Flow Event Launcher</h2>
 There are two steps to set up and use the FEL on any lightning page:
