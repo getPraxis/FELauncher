@@ -100,12 +100,12 @@ The component accepts the following attributes:
 **Sample Event Payload:**
 ```
 {
-"ids" : "#ids#",
+ "ids" : "#ids#",
  "flowName" : "My_Cool_Flow",
  "flowVariableName" : "selectedLines",
  "forcePageRefresh" : true,
  "sObject" : "myCustomObject__c",
-     "fields" : [ "Id", "Name","My_Field__c","LastModifiedDate","OwnerId","Owner.FullName"]
+ "fields" : [ "Id", "Name","My_Field__c","LastModifiedDate","OwnerId","Owner.FullName"]
 }
 ```
 
