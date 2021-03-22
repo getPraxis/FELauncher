@@ -2,6 +2,10 @@
 #### Launch flows from Enhanced Lightning Grid's row or list button, and have that flow open as a pop-up window overlay (modal).
 > Developed by @darrylingalls, Sr. Developer at [Praxis Solutions LLC](www.getpraxis.com)
 
+<h2>Demo</h2>
+
+[![Flow Event Launcher Demo](../media/VideoImage.png?raw=true "image_tooltip")](https://threadit.app/thread/bi97lbkso47148lujkre)
+
 <h2>Introduction</h2>
 The Enhanced Lightning Grid component from Salesforce Labs is a phenomenal component that enables creating a custom related-list table with:
 
