@@ -85,7 +85,7 @@ The component accepts the following attributes:
    A valid list of Salesforce Id’s for the SObjects(s) on the Enhanced Lightning Grid that was selected. EGL support the following variables: \
      a. #id# - passes the id of the row (you will only use this in row-level actions) \
      b. #ids# - passes the list of ids for the selected rows (you will only use this in list-level actions) \
-     c. #parentecordId# - passes the id of the parent record (the record viewed on the page) \
+     c. #parentrecordId# - passes the id of the parent record (the record viewed on the page) \
      d. #AnyAPIName# - you can pass in the value of any field that is displayed in the table, for example #LastModifiedDate#
 2. **flowName (Required)** \
    A valid API name of the flow which is expected to be started.
