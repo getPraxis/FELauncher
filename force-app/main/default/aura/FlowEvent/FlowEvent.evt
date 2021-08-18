@@ -1,8 +1,9 @@
-<aura:event type="APPLICATION" description="Event template" >
+<aura:event type="APPLICATION" description="Event template" access="GLOBAL">
     <aura:attribute name="ids" 		type="string" required="true"/>
     <aura:attribute name="flowName" type="string" required="true"/>
     <aura:attribute name="flowVariableName" type="string" required="true"/>
     <aura:attribute name="sObject"  type="string" required="true"/>
     <aura:attribute name="fields"   type="string[]" required="true"/>
-    <aura:attribute name='forcePageRefresh' type="boolean" required="true" default="false"/>
+    <aura:attribute name="forcePageRefresh" type="boolean" required="true" default="false"/>
+    <aura:attribute name="dialogWidth"      type="integer"   required="false" default="80"/>
 </aura:event>
