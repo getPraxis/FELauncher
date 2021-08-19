@@ -91,8 +91,8 @@ The component accepts the following attributes:
    A valid API name of the flow which is expected to be started.
 3. **flowVariableName (Required)** \
    The name of the input variable in the launched flow that will accept a **collection of SObjects **that will be passed from the FEL Component.  \
-   _Note that the component doesn’t just pass in the selected IDs, it actually queries the records and passes in the records themselves. Therefore, the input variable must be of type ‘Record’ and must have the ‘Allow multiple values (collection)’ checkbox selected, as well as the ‘Available as Input’._
-   _As of version 2.0 you can pass multiple values as Flow Inputs.  This field can be a single value or be made into an array.  Note:  You must include the variable names in the same order that you defined their values in the Ids field above. \
+   _Note that the component doesn’t just pass in the selected IDs, it actually queries the records and passes in the records themselves. Therefore, the input variable must be of type ‘Record’ and must have the ‘Allow multiple values (collection)’ checkbox selected, as well as the ‘Available as Input’. \
+   As of version 2.0 you can pass multiple values as Flow Inputs.  This field can be a single value or be made into an array.  Note:  You must include the variable names in the same order that you defined their values in the Ids field above. \
 4. **sObject (Required)** \
    The API name of the sObject that will be queried and passed into the flow’s input variable
 5. **Fields (Required)**  \
