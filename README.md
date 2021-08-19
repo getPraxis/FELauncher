@@ -6,6 +6,11 @@
 
 [![Flow Event Launcher Demo](../media/VideoImage.png?raw=true "image_tooltip")](https://threadit.app/thread/bi97lbkso47148lujkre)
 
+<h2>Version 2.0 Enhancement</h2>
+Version 2.0 introduced the ability to create flows that can take more than one input parameter.  Two parameters: "flowVariableName" and "Ids" have been modified to be arrays
+to allow for defining multiple variable names and their input values.   Please see the section "Sample Event Payload passing multiple parameters to a flow" for an example of
+the payload.
+
 <h2>Introduction</h2>
 The Enhanced Lightning Grid component from Salesforce Labs is a phenomenal component that enables creating a custom related-list table with:
 
