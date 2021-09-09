@@ -35,10 +35,10 @@ There are two ways to install the Flow Event Launcher:
 1. Clone the code in this repository, and push it to your Salesforce Org
 2. Install the pre-packaged component using the following links
     1. Install to Sandbox: 
-       [https://test.salesforce.com/packaging/installPackage.apexp?p0=04t1K000002azFiQAI](https://test.salesforce.com/packaging/installPackage.apexp?p0=04t1K000002azFiQAI)
+       [https://test.salesforce.com/packaging/installPackage.apexp?p0=04t1K000002azn7QAA](https://test.salesforce.com/packaging/installPackage.apexp?p0=04t1K000002azn7QAA)
 
     2. Install to Production: 
-       [https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1K000002azFiQAI](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1K000002azFiQAI)
+       [https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1K000002azn7QAA](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1K000002azn7QAA)
 
 <h2>How to use Flow Event Launcher</h2>
 There are two steps to set up and use the FEL on any lightning page:
