@@ -5,6 +5,14 @@
 <h2>Demo</h2>
 
 [![Flow Event Launcher Demo](../media/VideoImage.png?raw=true "image_tooltip")](https://threadit.app/thread/bi97lbkso47148lujkre)
+<h2> Version 2.5 Enhancement</h2>
+Version 2.5 introduced the ability to use the FEL component in Lightning Communities/Digital Experience.  Fixed an issue where using
+the FEL component in Console mode would cause multiple tabs to launch a flow.   
+
+<h2>Version 2.0 Enhancement</h2>
+Version 2.0 introduced the ability to create flows that can take more than one input parameter.  Two parameters: "flowVariableName" and "Ids" have been modified to be arrays
+to allow for defining multiple variable names and their input values.   Please see the section "Sample Event Payload passing multiple parameters to a flow" for an example of
+the payload.
 
 <h2>Version 2.0 Enhancement</h2>
 Version 2.0 introduced the ability to create flows that can take more than one input parameter.  Two parameters: "flowVariableName" and "Ids" have been modified to be arrays
@@ -35,10 +43,11 @@ There are two ways to install the Flow Event Launcher:
 1. Clone the code in this repository, and push it to your Salesforce Org
 2. Install the pre-packaged component using the following links
     1. Install to Sandbox: 
-       [https://test.salesforce.com/packaging/installPackage.apexp?p0=04t1K000002azn7QAA](https://test.salesforce.com/packaging/installPackage.apexp?p0=04t1K000002azn7QAA)
+       [https://test.salesforce.com/packaging/installPackage.apexp?p0=04t1K000002b1c8QAA](https://test.salesforce.com/packaging/installPackage.apexp?p0=04t1K000002b1c8QAA)
 
     2. Install to Production: 
-       [https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1K000002azn7QAA](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1K000002azn7QAA)
+       [https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1K000002b1c8QAA](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1K000002b1c8QAA)
+
 
 <h2>How to use Flow Event Launcher</h2>
 There are two steps to set up and use the FEL on any lightning page:
