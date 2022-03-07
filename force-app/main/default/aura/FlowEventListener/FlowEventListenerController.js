@@ -10,7 +10,8 @@
         if (elem === null || elem.offsetParent === null ) {
             return;
         }
-        component.set('v.refreshPage', event.getParam('forcePageRefresh'));
+
+      component.set('v.refreshPage', event.getParam('forcePageRefresh'));
         component.set('v.dialogWidth', dialogWidth);
         if ($A.util.isUndefinedOrNull(ids) || $A.util.isUndefinedOrNull(flowName) ||
             $A.util.isUndefinedOrNull(flowVariableName) || $A.util.isUndefinedOrNull(sObjectName) ||

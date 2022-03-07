@@ -18,7 +18,6 @@
             width: {!v.dialogWidth}%  !important};
         }
     </aura:html>
-   
     <aura:if isTrue="{!v.isModalOpened}">
     
     <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" 
