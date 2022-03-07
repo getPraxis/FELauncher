@@ -5,6 +5,14 @@
 <h2>Demo</h2>
 
 [![Flow Event Launcher Demo](../media/VideoImage.png?raw=true "image_tooltip")](https://threadit.app/thread/bi97lbkso47148lujkre)
+<h2> Version 2.5 Enhancement</h2>
+Version 2.5 introduced the ability to use the FEL component in Lightning Communities/Digital Experience.  Fixed an issue where using
+the FEL component in Console mode would cause multiple tabs to launch a flow.   
+
+<h2>Version 2.0 Enhancement</h2>
+Version 2.0 introduced the ability to create flows that can take more than one input parameter.  Two parameters: "flowVariableName" and "Ids" have been modified to be arrays
+to allow for defining multiple variable names and their input values.   Please see the section "Sample Event Payload passing multiple parameters to a flow" for an example of
+the payload.
 
 <h2>Introduction</h2>
 The Enhanced Lightning Grid component from Salesforce Labs is a phenomenal component that enables creating a custom related-list table with:
@@ -30,10 +38,10 @@ There are two ways to install the Flow Event Launcher:
 1. Clone the code in this repository, and push it to your Salesforce Org
 2. Install the pre-packaged component using the following links
     1. Install to Sandbox: 
-       [https://test.salesforce.com/packaging/installPackage.apexp?p0=04t1K000002azFiQAI](https://test.salesforce.com/packaging/installPackage.apexp?p0=04t1K000002azFiQAI)
+       [https://test.salesforce.com/packaging/installPackage.apexp?p0=04t1K000002b1c8QAA](https://test.salesforce.com/packaging/installPackage.apexp?p0=04t1K000002b1c8QAA)
 
     2. Install to Production: 
-       [https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1K000002azFiQAI](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1K000002azFiQAI)
+       [https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1K000002b1c8QAA](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1K000002b1c8QAA)
 
 <h2>How to use Flow Event Launcher</h2>
 There are two steps to set up and use the FEL on any lightning page:
@@ -82,16 +90,17 @@ The event payload is entered in a JSON format (example below). \
 The component accepts the following attributes:
 
 1. **Ids (Required)** \
-   A valid list of Salesforce Id’s for the SObjects(s) on the Enhanced Lightning Grid that was selected. EGL support the following variables: \
+   A valid list of Salesforce Id’s for the SObjects(s) on the Enhanced Lightning Grid that was selected. EGL support the following variables: Update:Ids can be an array of multiple Parameters\
      a. #id# - passes the id of the row (you will only use this in row-level actions) \
-     b. #ids# - passes the list of ids for the selected rows (you will only use this in list-level actions) \
+     b. #ids# - passes the list of ids for the selected rows (you will only use this in list-level actions). As of version 2.0 you can pass multiple values as Flow Inputs.  This field can be a single value or be made into an array\
      c. #parentrecordId# - passes the id of the parent record (the record viewed on the page) \
      d. #AnyAPIName# - you can pass in the value of any field that is displayed in the table, for example #LastModifiedDate#
 2. **flowName (Required)** \
    A valid API name of the flow which is expected to be started.
 3. **flowVariableName (Required)** \
    The name of the input variable in the launched flow that will accept a **collection of SObjects **that will be passed from the FEL Component.  \
-   _Note that the component doesn’t just pass in the selected IDs, it actually queries the records and passes in the records themselves. Therefore, the input variable must be of type ‘Record’ and must have the ‘Allow multiple values (collection)’ checkbox selected, as well as the ‘Available as Input’._
+   _Note that the component doesn’t just pass in the selected IDs, it actually queries the records and passes in the records themselves. Therefore, the input variable must be of type ‘Record’ and must have the ‘Allow multiple values (collection)’ checkbox selected, as well as the ‘Available as Input’. \
+   As of version 2.0 you can pass multiple values as Flow Inputs.  This field can be a single value or be made into an array.  Note:  You must include the variable names in the same order that you defined their values in the Ids field above. \
 4. **sObject (Required)** \
    The API name of the sObject that will be queried and passed into the flow’s input variable
 5. **Fields (Required)**  \
@@ -101,18 +110,29 @@ The component accepts the following attributes:
    When using this parameter, the FEL component will cause the page to refresh all data once the flow popup (modal) is closed.  \
    This is done by firing the **_e.Force:refreshView_** event, and is different than a full page-refresh. \
 
-**Sample Event Payload:**
+**Sample Event Payload With only default Id's Parameter**
 ```
 {
  "ids" : "#ids#",
  "flowName" : "My_Cool_Flow",
- "flowVariableName" : "selectedLines",
+ "flowVariableName" : "varSelectedLines",
  "forcePageRefresh" : true,
  "sObject" : "myCustomObject__c",
  "fields" : [ "Id", "Name","My_Field__c","LastModifiedDate","OwnerId","Owner.FullName"]
 }
 ```
 
+**Sample Event Payload passing multiple parameters to a flow:**
+```
+{
+ "ids" : ["#ids#","#parentrecordId#],
+ "flowName" : "My_Cool_Flow",
+ "flowVariableName" : ["varSelectedLines", "varParentId"] ,
+ "forcePageRefresh" : true,
+ "sObject" : "myCustomObject__c",
+ "fields" : [ "Id", "Name","My_Field__c","LastModifiedDate","OwnerId","Owner.FullName"]
+}
+```
 <h2>Flow Requirements</h2>
 Your flow must have an input variable that takes a collection of the SObjects records that you are expecting from the Enhanced Lightning Grid.   
 
