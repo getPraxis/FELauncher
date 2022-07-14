@@ -13,10 +13,6 @@
     <div id="flowevent_hiddendiv" aura:id="flowevent_hiddendiv"/>
     <aura:html tag="style">
 
-        .slds-modal__container{
-            max-width: 100rem !important;
-            width: {!v.dialogWidth}%  !important};
-        }
     </aura:html>
     <aura:if isTrue="{!v.isModalOpened}">
     
