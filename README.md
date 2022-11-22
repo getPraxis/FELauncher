@@ -131,7 +131,7 @@ The component accepts the following attributes:
 **Sample Event Payload passing multiple parameters to a flow:**
 ```
 {
- "ids" : ["#ids#","#parentrecordId#],
+ "ids" : ["#ids#","#parentrecordId#"],
  "flowName" : "My_Cool_Flow",
  "flowVariableName" : ["varSelectedLines", "varParentId"] ,
  "forcePageRefresh" : true,
