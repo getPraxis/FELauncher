@@ -115,6 +115,9 @@ The component accepts the following attributes:
 6. **forcePageRefresh (Optional)** \
    When using this parameter, the FEL component will cause the page to refresh all data once the flow popup (modal) is closed.  \
    This is done by firing the **_e.Force:refreshView_** event, and is different than a full page-refresh. \
+7. **dialogWidth (Optional)** \
+   This parameter can be used to set the width of the dialog by percent. Please enter a whole number it will always be assume it is a percentage.  
+  
 
 **Sample Event Payload With only default Id's Parameter**
 ```
@@ -136,7 +139,8 @@ The component accepts the following attributes:
  "flowVariableName" : ["varSelectedLines", "varParentId"] ,
  "forcePageRefresh" : true,
  "sObject" : "myCustomObject__c",
- "fields" : [ "Id", "Name","My_Field__c","LastModifiedDate","OwnerId","Owner.FullName"]
+ "fields" : [ "Id", "Name","My_Field__c","LastModifiedDate","OwnerId","Owner.FullName"],
+ "dialogWidth" : 50
 }
 ```
 <h2>Flow Requirements</h2>
