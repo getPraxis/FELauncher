@@ -4,7 +4,7 @@
 
 <h2>Demo</h2>
 
-[![Flow Event Launcher Demo](../media/VideoImage.png?raw=true "image_tooltip")](https://threadit.app/thread/bi97lbkso47148lujkre)
+[![Flow Event Launcher Demo](../media/VideoImage.png?raw=true "image_tooltip")](https://www.youtube.com/watch?v=MxYGvmB1jBc)
 <h2> Version 2.5 Enhancement</h2>
 Version 2.5 introduced the ability to use the FEL component in Lightning Communities/Digital Experience.  Fixed an issue where using
 the FEL component in Console mode would cause multiple tabs to launch a flow.   
